@@ -1,0 +1,160 @@
+@import url("https://fonts.googleapis.com/css2?family=Do+Hyeon&display=swap");
+.photoDiv ul {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.photoDiv {
+    margin-right: 1.5vw;
+    margin-bottom: 50px;
+    position: relative;
+    width: 300px;
+    height: 300px;
+    border-radius: 3%;
+    font-family: "Do Hyeon", sans-serif;
+    overflow: hidden;
+}
+
+.photoDiv img {
+    width: 100%;
+    height: 100%;
+}
+
+.photoDiv p {
+    font-size: 18px;
+    position: absolute;
+    top: 80%;
+    left: -100%;
+    z-index: 8;
+    color: var(--nameColorContact);
+}
+
+.photoDiv:hover p {
+    left: 2%;
+}
+
+.photoDiv:hover li {
+    transform: translateY(0);
+}
+
+.photoDiv img {
+    transition: all 0.2s ease;
+}
+
+.photoDiv:hover .tri {
+    right: -40%;
+}
+
+.photoDiv:hover .rect {
+    top: 75%;
+}
+
+.photoDiv:hover .tri::before {
+    right: -312px;
+}
+
+.photoDiv:hover .rect::before {
+    transform: translateY(15px);
+}
+
+.name {
+    transition: all 0.3s ease-out;
+}
+
+.tri {
+    border-top: 220px solid transparent;
+    border-bottom: 190px solid transparent;
+    border-right: 288px solid var(--contactWhite);
+    opacity: 0.9;
+    position: absolute;
+    display: block;
+    top: 0;
+    right: -100%;
+    transition: all 0.3s ease-in-out;
+}
+
+.tri::before {
+    border-top: 220px solid transparent;
+    border-bottom: 190px solid transparent;
+    border-right: 288px solid var(--colorThreeContact);
+    position: absolute;
+    display: block;
+    content: "";
+    top: -220px;
+    right: -612px;
+    transition: all 0.3s ease-in-out;
+    transition-delay: 0.2s;
+}
+
+.rect {
+    width: 750px;
+    height: 200px;
+    background: var(--contactWhite);
+    display: block;
+    position: absolute;
+    top: 175%;
+    left: -78%;
+    transform: rotate(30deg);
+    z-index: 5;
+    opacity: 0.9;
+    transition: all 0.3s ease-in-out;
+}
+
+.rect::before {
+    content: "";
+    display: block;
+    width: 100%;
+    position: relative;
+    height: 100%;
+    background-color: var(--colorFiveContact);
+    transform: translateY(200px);
+    z-index: 2;
+    transition: all 0.3s ease-in-out;
+}
+
+.photoDiv ul {
+    list-style: none;
+    position: absolute;
+    bottom: 8px;
+    left: 2%;
+    z-index: 9;
+    margin-top: 10px;
+}
+
+.photoDiv li {
+    display: inline-block;
+    font-size: 20px;
+    margin-right: 7px;
+    color: var(--contactWhite);
+    transition: all 0.3s ease-in-out;
+    transform: translateY(100px);
+}
+
+/* .photoDiv:hover li:hover {
+  transform: translateY(-5px);
+}
+.svg {
+  fill: var(--contactUsSvgFill);
+} */
+
+.photoDiv a {
+    text-decoration: none;
+    color: white;
+}
+
+/* .iconList {
+  border: 1px solid red;
+}
+
+.name {
+  border: 1px solid red;
+} */
+
+.iconhover {
+    transition: all 0.1s ease-in;
+}
+
+.iconhover:hover {
+    color: var(--primary-color);
+}

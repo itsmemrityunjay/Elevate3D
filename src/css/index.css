@@ -1,0 +1,45 @@
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&display=swap');
+
+body {
+  margin: 0;
+  padding: 0;
+  font-family: 'Josefin Sans', sans-serif;
+  background-color: #190019;
+  /* scrollbar-width: thin;
+  scrollbar-color: var(--secondary-color) var(--tertiary-color); */
+}
+
+:root {
+  --primary-color: #190019;
+  --secondary-color: #0f0f0f;
+  --tertiary-color: #10504F;
+  --color1: white;
+  --color2: black;
+  --color3: rgb(231, 231, 231);
+  --color4: rgb(30, 30, 70);
+  --color5: rgb(3, 133, 185);
+  --backgroundQuery: #451952;
+  --headingQuery: #efc36a;
+  --headingMerch: #efc36a;
+  --headingColorCard: #efc36a;
+  --pMerch: white;
+  --spanColorCard: white;
+  --listMerch: white;
+  --bgColorCard: #f8f9fa;
+  --cardColor: #efc36a;
+  --colorThreeContact: #7A316F;
+  --colorFiveContact: #ebbd60;
+  --contactWhite: #fff;
+  --mainHeadingContactUs: #efc36a;
+  --bgContactUs: #343a40;
+  --teamHeading: whitesmoke;
+  --firstColorSidebarContact: #efc36a;
+  --secondColorSidebarContact: #efc36a;
+  --thirdColorSidebarContact: #efc36a;
+  --fourthColorSidebarContact: #efc36a;
+  --fifthColorSidebarContact: #efc36a;
+  --greyColorSidebarContact: white;
+  --contactUsSvgFill: white;
+  --nameColorContact: white;
+  --schedule-color: rgb(241, 250, 238);
+}

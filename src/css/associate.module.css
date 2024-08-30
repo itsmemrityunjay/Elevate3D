@@ -1,0 +1,68 @@
+@import url('https://fonts.googleapis.com/css2?family=Mooli&display=swap');
+.associate {
+    display: flex;
+    flex-direction: row;
+    justify-content: end;
+    align-items: center;
+    padding: 15px;
+}
+
+.popup {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.associateButton {
+    font-family: "Mooli", cursive;
+    color: var(--secondary-color);
+    padding: 5px 10px;
+    width: auto;
+    display: flex;
+    cursor: pointer;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    font-size: large;
+    background: none;
+    border: 2px solid var(--secondary-color);
+    border-radius: 15px;
+    transition: all 0.3s;
+    background: rgba(255, 255, 255, 0.08);
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(4.3px);
+    -webkit-backdrop-filter: blur(4.3px);
+}
+
+.icon {
+    font-size: 1.5rem;
+}
+
+.associateButton p {
+    margin-left: 10px;
+}
+
+.associateButton:hover {
+    background: #190019;
+    /* color: white; */
+    transform: scale(1.1);
+    transform: translate(0, -4px);
+    /* border: 2px solid white; */
+}
+
+@media (max-width: 768px) {
+    .associate {
+        /* margin-top: 25px; */
+        display: flex;
+        flex-direction: row;
+        justify-content: end;
+        align-items: end;
+    }
+    .icon {
+        font-size: 1rem;
+    }
+    .associateButton p {
+        font-size: 0.5rem;
+    }
+}

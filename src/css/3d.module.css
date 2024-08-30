@@ -1,0 +1,228 @@
+.threeDPage {
+    width: 100vw;
+    height: 100vh;
+    background-color: black;
+    position: relative;
+}
+
+.loader {
+    background-color: #190019;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100vw;
+    height: 100vh;
+    z-index: 10;
+}
+
+.spinner {
+    border: 4px solid rgba(255, 255, 255, 0.3);
+    border-top: 4px solid var(--secondary-color);
+    border-radius: 50%;
+    width: 40px;
+    height: 40px;
+    animation: spin 2s linear infinite;
+    z-index: 1000;
+}
+
+@keyframes spin {
+    0% {
+        transform: rotate(0deg);
+    }
+
+    100% {
+        transform: rotate(360deg);
+    }
+}
+
+.loaderText {
+    margin-top: 15px;
+    font-size: 2rem;
+    color: var(--secondary-color);
+    font-weight: 700;
+}
+
+.normalMode {
+    position: fixed;
+    bottom: 10px;
+    right: 10px;
+    color: var(--secondary-color);
+    font-size: 12px;
+    font-weight: 800;
+    -webkit-user-select: none;
+    /* Safari */
+    -ms-user-select: none;
+    /* IE 10 and IE 11 */
+    user-select: none;
+    z-index: 1200;
+}
+
+.textBox {
+    text-align: center;
+    font-size: 15px;
+    color: var(--tertiary-color);
+    left: 0px;
+    bottom: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+    padding: 10px;
+    width: 40vw;
+    max-height: 50vh;
+    overflow: hidden;
+    min-width: 200px;
+    /* background: rgba(147, 147, 147, 0.5);
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+  backdrop-filter: blur(2px);
+  -webkit-backdrop-filter: blur(2px);
+  border-radius: 10px;
+  border: 0.1px solid rgb(87, 87, 87); */
+    overflow: "auto";
+    -webkit-touch-callout: none;
+    -webkit-user-select: none;
+    -khtml-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    transform: translate3d(calc(-50%), calc(-50%), 0);
+    z-index: -1000;
+}
+
+.scrollWrapper {
+    max-height: 38.5vh;
+    overflow: auto;
+}
+
+.sectionHeading {
+    /* color: var(--secondary-color); */
+    color: var(--tertiary-color);
+    margin-bottom: 5px;
+    font-size: 30px;
+    font-weight: 900;
+}
+
+.sectionPara {
+    /* color: var(--secondary-color); */
+    color: var(--secondary-color);
+    margin-bottom: 5px;
+    font-size: 20px;
+    font-weight: 400;
+
+}
+
+.discoverMoreImg {
+    width: 25%;
+    height: auto;
+    margin: 5px;
+    border: 1px solid var(--secondary-color);
+    border-radius: 5px;
+}
+
+.img {
+    width: 40%;
+    height: auto;
+    margin: 5px;
+    border: 1px solid var(--secondary-color);
+    border-radius: 5px;
+}
+
+.youtube {
+    width: 75%;
+    height: auto;
+    margin: 5px;
+    border: 1px solid var(--secondary-color);
+    border-radius: 5px;
+}
+
+.annotationsWrapper {
+    position: fixed !important;
+    width: 20vw;
+    max-height: 40vh;
+}
+
+.annotation {
+    box-sizing: border-box;
+    padding-left: 5px;
+    padding-right: 5px;
+    padding-top: 2px;
+    padding-bottom: 2px;
+    color: black;
+    font-size: 12px;
+    width: fit-content;
+    text-align: center;
+    font-weight: 700;
+    background: rgba(202, 202, 202, 0.7);
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(1px);
+    -webkit-backdrop-filter: blur(1px);
+    border-radius: 5px;
+    border: 2px solid var(--secondary-color);
+    transform: translate3d(calc(30%), calc(-50%), 0);
+}
+
+.viewMore {
+    text-decoration: none;
+    margin: 10px;
+    font-size: 12px;
+    display: block;
+    color: var(--tertiary-color);
+}
+
+.viewMore:hover {
+    color: rgb(58, 11, 71);
+}
+
+.fullScreenTypeface {
+    height: 100vh;
+    width: 100vw;
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    transition: 2s ease-in-out;
+    -webkit-touch-callout: none;
+    -webkit-user-select: none;
+    -khtml-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    z-index: 1100;
+}
+
+.bg {
+    height: 100vh;
+    width: 100vw;
+    position: absolute;
+    background: url("../assets/bg/bg.jpg");
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    filter: brightness(0.8);
+}
+
+.introText {
+    color: white;
+    font-size: 30px;
+    margin-bottom: 50px;
+    margin-top: -70px;
+    filter: brightness(1);
+}
+
+.letsGo {
+    margin-top: 10px;
+    font-size: 20px;
+    font-weight: 800;
+    color: white;
+    transition: 0.2s;
+    filter: brightness(1);
+}
+
+.letsGo:hover {
+    color: rgb(218, 218, 218);
+}
+
+.typeface {
+    width: 100%;
+    height: auto;
+}

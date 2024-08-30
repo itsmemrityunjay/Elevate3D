@@ -1,0 +1,203 @@
+/* .app-gallery {
+  margin-top: 40px;
+  display: flex;
+  flex-direction: column;
+  padding: 3rem 0;
+  justify-content: center;
+  align-items: center;
+  scroll-behavior: smooth;
+}
+
+.maintitle {
+  text-align: center;
+  font-size: 6vw;
+  margin: 20px;
+  color: #ffffff;
+  font-family: "Bebas Neue", sans-serif;
+  letter-spacing: 2px;
+}
+
+.app-gallery-images {
+  display: flex;
+  flex-direction: row;
+  max-width: 95%;
+  position: relative;
+  transition: all 0.3s ease-in-out;
+}
+
+.app-gallery-images_container {
+  display: flex;
+  overflow-x: auto;
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+  scroll-snap-type: x mandatory;
+  transition: all 0.3s ease-in-out;
+}
+
+.app-gallery-images_container::-webkit-scrollbar {
+  display: none;
+}
+
+.app-gallery-images_card {
+  position: relative;
+  min-width: fit-content;
+  margin-right: 1rem;
+  margin-left: 1rem;
+  position: sticky;
+  left: 5vw;
+  display: flex;
+  transition: all 0.3s ease-in-out;
+}
+
+.app-gallery-images_card .gallery-image {
+  max-width: 100%;
+  width: max-content;
+  height: auto;
+  height: 70vh;
+  width: 90vh;
+  transition: all 0.3s ease-in-out;
+}
+
+.app-gallery-images_arrows {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 2rem;
+  position: absolute;
+  bottom: 5%;
+}
+
+.gallery-arrow-icon {
+  color: var(--secondary-color);
+  font-size: 2.5rem;
+  cursor: pointer;
+  background: black;
+  border-radius: 10px;
+}
+
+.gallery-arrows-div {
+  background: var(--secondary-color);
+  padding: 3px;
+  border-radius: 10px;
+}
+
+.gallery-arrow-icon:hover {
+  color: white;
+}
+
+.gallery-image {
+  border: 2px solid var(--secondary-color);
+  border-radius: 5px;
+  box-sizing: border-box;
+}
+
+.app-gallery-images_card:nth-child(1) img {
+  transform: scale(0.75) rotate(-10deg);
+}
+
+.app-gallery-images_card:nth-child(2) img {
+  transform: scale(0.75) rotate(-7deg);
+}
+
+.app-gallery-images_card:nth-child(3) img {
+  transform: scale(0.75) rotate(-4deg);
+}
+
+.app-gallery-images_card:nth-child(4) img {
+  transform: scale(0.75) rotate(-1deg);
+}
+
+.app-gallery-images_card:nth-child(5) img {
+  transform: scale(0.75) rotate(2deg);
+}
+
+.app-gallery-images_card:nth-child(6) img {
+  transform: scale(0.75) rotate(5deg);
+}
+
+.app-gallery-images_card:nth-child(7) img {
+  transform: scale(0.75) rotate(8deg);
+}
+
+.app-gallery-images_card:nth-child(8) img {
+  transform: scale(0.75) rotate(11deg);
+}
+
+@media (width<= 750px) {
+  .app-gallery-images_card .gallery-image {
+    width: 100vw;
+    height: 35vh;
+  }
+  .app-gallery {
+    padding: 0;
+  }
+} */
+
+/* ------------------------------------------------------------------------------------------------------------ */
+
+.landinggallery {
+    padding: 5vh 5vw;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+    flex-wrap: wrap;
+    box-sizing: border-box;
+}
+
+.showgallery {
+    padding: 6vh 6vw;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: wrap;
+    border-radius: 10px;
+}
+
+.imagess {
+    margin: 10px 10px;
+    height: 30vh;
+    width: auto;
+    border-radius: 5px;
+    border: 2px solid var(--secondary-color);
+    box-sizing: border-box;
+}
+
+.imagess:hover {
+    transform: scale(1.1);
+    transition: transform 0.25s;
+}
+
+@media (max-width: 576px) {
+    .landinggallery {
+        padding: 5vh 0;
+        width: 90vw;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        flex-wrap: nowrap;
+    }
+    .showgallery {
+        padding: 0vh 0vw;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        flex-wrap: nowrap;
+        border-radius: 10px;
+    }
+    .imagess {
+        margin: 15px 15px;
+        height: auto;
+        width: 70vw;
+        border-radius: 10px;
+        border: 1px solid var(--secondary-color);
+    }
+    .imagess:hover {
+        transform: scale(1.1);
+        transition: transform 0.5s;
+    }
+}

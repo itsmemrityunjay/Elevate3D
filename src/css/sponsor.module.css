@@ -1,0 +1,92 @@
+@import url("https://fonts.googleapis.com/css2?family=Mooli&display=swap");
+.app__sponsors {
+    min-height: 100vh;
+    width: 100%;
+    background: linear-gradient(#2B124C, #190019);
+    background-attachment: fixed;
+    overflow: hidden;
+    font-family: "Mooli", cursive;
+}
+
+.sponsors__right {
+    color: var(--secondary-color);
+    margin-bottom: 1em;
+    font-weight: 500;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    padding: 3rem;
+}
+
+.sponsors_heading {
+    text-align: center;
+    font-size: 3em;
+    margin-top: 25px;
+    color: var(--secondary-color);
+}
+
+.sponsors_subheading {
+    text-align: center;
+    font-size: 2.5em;
+    margin: 30px;
+    color: white;
+}
+
+.sponsorrow {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.tabButtons {
+    list-style: none;
+    display: flex;
+    flex-direction: row;
+    justify-content: start;
+    padding: 0;
+    margin: 2em 0.5em;
+}
+
+.tabButtons button {
+    color: var(--secondary-color);
+    padding: 5px 10px;
+    font-size: 1.5em;
+    margin: 0 1rem;
+    border: none;
+    border-radius: 5px;
+    background: var(--primary-color);
+    cursor: pointer;
+    font-weight: 600;
+    transition: background 0.3s;
+}
+
+.tabButtons button.activeTab {
+    color: var(--primary-color);
+    background: var(--secondary-color);
+}
+
+@media (max-width: 600px) {
+    .sponsors_subheading {
+        font-size: 1.75em;
+    }
+    .sponsors__right {
+        padding: 3rem 1rem;
+    }
+    .sponsors_heading {
+        text-align: center;
+        font-size: 2em;
+        margin: 25px 5px 15px 5px;
+    }
+    .tabButtons {
+        margin: 1em 0.5em 2em 0.5em;
+    }
+    .tabButtons button {
+        font-size: 1em;
+        padding: 5px 5px;
+        margin: 0 0.5rem;
+    }
+}

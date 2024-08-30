@@ -1,0 +1,35 @@
+@import url('https://fonts.googleapis.com/css2?family=Aladin&family=Do+Hyeon&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Mooli&display=swap');
+.forBackground {
+    margin: 0px;
+    background: linear-gradient(#2B124C, #190019);
+    background-attachment: fixed;
+    height: 100vh;
+    width: 100vw;
+    padding: 20px 0;
+    overflow-x: hidden;
+}
+
+.queryHeading {
+    font-size: 3em;
+    color: var(--headingQuery);
+    margin-top: 80px;
+    margin-bottom: 60px;
+    text-align: center;
+    /* font-family: 'Josefin Sans', sans-serif; */
+    font-family: 'Mooli', sans-serif;
+}
+
+.flexContainer {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+@media (max-width: 612px) {
+    .queryHeading {
+        font-size: 2em;
+        padding: 0 5px;
+        margin: 55px 0 20px 0;
+    }
+}

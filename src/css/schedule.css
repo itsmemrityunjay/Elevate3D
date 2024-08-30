@@ -1,0 +1,247 @@
+@import url("https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Mooli&display=swap");
+.app__schedule {
+    font-family: "Mooli", cursive;
+    min-height: 100vh;
+    width: 100%;
+    padding: 5rem 6rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    align-items: center;
+    overflow: hidden;
+}
+
+.schedule__heading {
+    display: block;
+    font-size: 3em;
+    padding-bottom: 10px;
+    font-weight: 900;
+    color: var(--secondary-color);
+    font-family: "Mooli", cursive;
+}
+
+.schedule__days {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 1rem 0;
+}
+
+.schedule__day {
+    color: var(--secondary-color);
+    padding: 1rem 2rem;
+    margin: 0 1rem;
+    border: none;
+    border-radius: 5px;
+    background: var(--primary-color);
+    cursor: pointer;
+    font-weight: 600;
+}
+
+.active__day {
+    color: var(--primary-color) !important;
+    background: var(--secondary-color) !important;
+}
+
+.schedule__events {
+    width: 75%;
+    --s: 10px;
+    padding: var(--s);
+    border: calc(2 * var(--s)) solid #0000;
+    outline: 1px solid var(--secondary-color);
+    outline-offset: calc(-1 * var(--s));
+    background: conic-gradient( from 90deg at 1px 1px, #0000 25%, var(--secondary-color) 0);
+    transition: opacity 0.3s cubic-bezier(0.68, -0.55, 0.27, 1.55);
+    opacity: 1;
+    min-height: 55vh;
+}
+
+.schedule__card {
+    border-radius: 10px;
+    /* background: rgba(69, 123, 157, 0.7);  */
+    background: rgba(255, 255, 255, 0.08);
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(4.3px);
+    -webkit-backdrop-filter: blur(4.3px);
+    border-radius: 16px;
+    padding: 1rem 3rem;
+    margin: 1rem 0;
+    color: var(--secondary-color);
+    transition: transform 0.3s cubic-bezier(0.68, -0.55, 0.27, 1.55), opacity 0.3s cubic-bezier(0.68, -0.55, 0.27, 1.55);
+    transform: translateY(0);
+    opacity: 1;
+}
+
+.schedule__title {
+    font-size: larger;
+    font-weight: 600;
+    color: var(--secondary-color);
+    margin-bottom: 0.5rem;
+}
+
+.schedule__description {
+    color: var(--schedule-color);
+    font-size: medium;
+    margin-bottom: 0.25rem;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: hidden;
+    max-width: 100%;
+}
+
+.schedule__venue {
+    font-weight: 600;
+    color: var(--schedule-color);
+    font-size: large;
+    margin-bottom: 0.25rem;
+}
+
+.schedule__time {
+    color: var(--schedule-color);
+    font-weight: 600;
+    font-size: large;
+    margin-bottom: 0.25rem;
+}
+
+.schedule__location {
+    font-weight: 600;
+    color: var(--schedule-color);
+    display: none;
+    margin-bottom: 0.25rem;
+}
+
+.schedule__image img {
+    height: 10vh;
+    display: block;
+    border-radius: 5px;
+    transition: all 0.3s cubic-bezier(0.68, -0.55, 0.27, 1.55);
+    margin-bottom: 0.25rem;
+}
+
+.schedule__image img:hover {
+    transform: scale(1.3);
+}
+
+.schedule__box {
+    /* text-align: center; */
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+/* .schedule__card:hover {
+  transform: translateY(-5px);
+}
+.schedule__card:hover .schedule__image img {
+  transform: scale(1.1);
+} */
+
+.schedule__mapbutton {
+    background-color: var(--primary-color);
+    color: var(--secondary-color);
+    border: none;
+    border-radius: 5px;
+    margin: 0.5rem 0;
+    padding: 0.25rem 0.5rem;
+    font-weight: 600;
+    cursor: pointer;
+    transition: all 0.3s cubic-bezier(0.68, -0.55, 0.27, 1.55);
+    transition: all 0.3s cubic-bezier(0.68, -0.55, 0.27, 1.55);
+}
+
+.schedule__mapbutton:hover {
+    /* transform: scale(1.1); */
+    background: var(--secondary-color);
+    color: var(--primary-color);
+}
+
+.schedule_left {
+    width: 70%;
+}
+
+.schedule__middle {
+    text-align: center;
+    width: 30%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.schedule__right {
+    width: 15%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.schedule__main {
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    align-items: center;
+    width: 100%;
+    background: linear-gradient(var(--tertiary-color), var(--primary-color));
+    background-attachment: fixed;
+}
+
+@media (max-width: 812px) {
+    .app__schedule {
+        padding: 1rem 1rem;
+        text-align: center;
+    }
+    .schedule__events {
+        width: 100%;
+    }
+    .schedule__day {
+        padding: 0.5rem 1rem;
+        margin: 0 0.5rem;
+    }
+    .schedule__title {
+        font-size: 1em;
+    }
+    .schedule__venue {
+        font-size: 0.8em;
+    }
+    .schedule__time {
+        font-size: 0.8em;
+        /* margin: 0 0.5rem; */
+    }
+    .schedule__mapbutton {
+        font-size: 0.8em;
+        margin-bottom: 1em;
+    }
+    .schedule__description {
+        white-space: wrap;
+    }
+    .schedule__box {
+        flex-direction: column;
+    }
+    .schedule__image img {
+        margin: 1rem 0;
+    }
+    .schedule__card {
+        padding: 1rem 1rem;
+    }
+    .schedule__middle,
+    .schedule__right,
+    .schedule_left {
+        width: 100%;
+    }
+    .schedule__middle {
+        flex-direction: row;
+        justify-content: space-evenly;
+        align-items: center;
+        text-align: center;
+    }
+    .schedule__heading {
+        display: block;
+        font-size: 2em;
+        text-align: center;
+        margin-top: 60px;
+        margin-bottom: 0px;
+    }
+}

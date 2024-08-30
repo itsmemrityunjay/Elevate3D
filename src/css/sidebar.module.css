@@ -1,0 +1,98 @@
+html {
+    scroll-behavior: smooth;
+}
+
+:root {
+    --menu-link-active-color: var(--firstColorSidebarContact);
+}
+
+.parent {
+    margin: 0px;
+    padding: 0px;
+    position: fixed;
+    top: 25vh;
+}
+
+.menuHoverFill li {
+    padding: 0;
+    margin: 0;
+    list-style-type: none;
+}
+
+.menuHoverFill a {
+    text-decoration: none;
+}
+
+.menuHoverFill li {
+    position: relative;
+    margin-bottom: 16px;
+    font-size: 23px;
+}
+
+.menuHoverFill li::before {
+    position: absolute;
+    content: "";
+    top: 0;
+    left: -1rem;
+    width: 2px;
+    height: 100%;
+    background: var(--menu-link-active-color);
+    transition: 0.6s;
+}
+
+.menuHoverFill li a {
+    position: relative;
+    color: var(--greyColorSidebarContact);
+    -webkit-background-clip: text;
+    background-clip: text;
+    transition: background-size 0.45s 0.04s;
+}
+
+.menuHoverFill li:nth-child(1) {
+    --menu-link-active-color: var(--firstColorSidebarContact);
+}
+
+.menuHoverFill li:nth-child(2) {
+    --menu-link-active-color: var(--secondColorSidebarContact);
+}
+
+.menuHoverFill li:nth-child(3) {
+    --menu-link-active-color: var(--thirdColorSidebarContact);
+}
+
+.menuHoverFill li:nth-child(4) {
+    --menu-link-active-color: var(--fourthColorSidebarContact);
+}
+
+.menuHoverFill li:nth-child(5) {
+    --menu-link-active-color: var(--fifthColorSidebarContact);
+}
+
+.menuHoverFill li:nth-child(6) {
+    --menu-link-active-color: var(--firstColorSidebarContact);
+}
+
+.menuHoverFill li:nth-child(7) {
+    --menu-link-active-color: var(--secondColorSidebarContact);
+}
+
+.menuHoverFill li:nth-child(8) {
+    --menu-link-active-color: var(--thirdColorSidebarContact);
+}
+
+.menuHoverFill li:nth-child(9) {
+    --menu-link-active-color: var(--fourthColorSidebarContact);
+}
+
+.menuHoverFill li:nth-child(10) {
+    --menu-link-active-color: var(--fifthColorSidebarContact);
+}
+
+.menuHoverFill li:hover::before {
+    left: calc(100% + 1rem);
+}
+
+.menuHoverFill li:hover a {
+    background-size: 100%;
+    color: var(--menu-link-active-color);
+}
